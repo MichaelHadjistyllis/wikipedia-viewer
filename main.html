@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Wikipedia Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form method="POST">
+            <button onclick="goToPage()"> 
+                Random Page
+            </button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="dynamic-target">
+                <form> </form>
+            </div>
+            <button onclick="goToSearch()"> 
+                Search 
+            </button>
+        </form>
+
+    </div>
+    <!-- Template -->
+    <div id="template" style="display:none">
+        <input type="text" name="newDiv" placeholder="Enter query:">
+    </div>
+
+</body>
+
+</html>
